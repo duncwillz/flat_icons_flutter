@@ -38,6 +38,6 @@ class MyWidget extends StatelessWidget {
 
 View the Flutter app in the `example` directory to see all the available `FlatIcons`.
 
-## Contributors
+## Contributor
 
   - Duncan Adjei
