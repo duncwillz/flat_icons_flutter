@@ -122,7 +122,7 @@ class _FlatIconsGalleryState extends State<FlatIconsGallery> {
   AppBar _searchBar(BuildContext context) {
     return new AppBar(
       leading: new IconButton(
-        icon: new Icon(FlatIcons.search),
+        icon: new Icon(FlatIcons.close),
         onPressed: () {
           setState(
             () {
