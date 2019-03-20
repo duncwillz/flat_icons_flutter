@@ -98,7 +98,7 @@ class _FlatIconsGalleryState extends State<FlatIconsGallery> {
       title: new Text("Flat Icon Flutter Gallery"),
       actions: [
         new IconButton(
-            icon: new Icon(FlatIcons.icon1),
+            icon: new Icon(FlatIcons.search),
             onPressed: () {
               ModalRoute.of(context).addLocalHistoryEntry(
                 new LocalHistoryEntry(
@@ -122,7 +122,7 @@ class _FlatIconsGalleryState extends State<FlatIconsGallery> {
   AppBar _searchBar(BuildContext context) {
     return new AppBar(
       leading: new IconButton(
-        icon: new Icon(FlatIcons.icon0),
+        icon: new Icon(FlatIcons.search),
         onPressed: () {
           setState(
             () {

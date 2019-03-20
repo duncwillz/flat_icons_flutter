@@ -1,5 +1,5 @@
 
-library font_awesome_flutter;
+library flat_icons_flutter;
 
 import 'package:flutter/widgets.dart';
 
