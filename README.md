@@ -4,10 +4,9 @@ The [Flat Icons](http://flaticons.com/) Icon pack available as set of Flutter Ic
 
 Based on Flat Icons Includes all free icons:
 
-  * Arts and Science
+  * Essentials
   * Social
-  * Computers
-  * Accessories
+  * Arrows set
   * Many and more, get some coffee and explore the beauty of the categories
 
 ## Installation
