@@ -40,3 +40,4 @@ View the Flutter app in the `example` directory to see all the available `FlatIc
 ## Contributor
 
   - Duncan Adjei
+   

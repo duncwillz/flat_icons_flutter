@@ -1,6 +1,6 @@
 name: flat_icons_flutter
 description: A new Flutter package.
-version: 1.0.1
+version: 1.0.2
 author: Duncan Adjei <duncanadjei@gmail.com>
 homepage: https://github.com/duncanadjei/flat_icons_flutter
 
@@ -23,8 +23,16 @@ flutter:
    fonts:
      - family: FlatIcons
        fonts:
-         - asset: lib/fonts/FlatIcon.ttf
+         - asset: lib/fonts/Flaticon.ttf
            weight: 400
+     - family: FlatIconsArrows
+       fonts:
+         - asset: lib/fonts/FlaticonArrows.ttf
+           weight: 400
+     - family: FlatIconsSocial
+       fonts:
+         - asset: lib/fonts/FlaticonSocial.ttf
+           weight: 400      
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

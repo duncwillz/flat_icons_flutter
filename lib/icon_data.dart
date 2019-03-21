@@ -11,3 +11,21 @@ class FlatIconsMedium extends IconData {
     fontPackage: 'flat_icons_flutter',
   );
 }
+
+class FlatIconsArrows extends IconData {
+  const FlatIconsArrows(int codePoint)
+      : super(
+    codePoint,
+    fontFamily: 'FlatIconsArrows',
+    fontPackage: 'flat_icons_flutter',
+  );
+}
+
+class FlatIconsSocial extends IconData {
+  const FlatIconsSocial(int codePoint)
+      : super(
+    codePoint,
+    fontFamily: 'FlatIconsSocial',
+    fontPackage: 'flat_icons_flutter',
+  );
+}
