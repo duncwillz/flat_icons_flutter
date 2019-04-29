@@ -3,8 +3,9 @@ library flat_icons_flutter;
 
 import 'package:flutter/widgets.dart';
 
-class FlatIconsMedium extends IconData {
-  const FlatIconsMedium(int codePoint)
+// Essentials Icons class 
+class FlatIconsEssentials extends IconData {
+  const FlatIconsEssentials(int codePoint)
       : super(
     codePoint,
     fontFamily: 'FlatIcons',
@@ -12,6 +13,7 @@ class FlatIconsMedium extends IconData {
   );
 }
 
+// Arrow Icons class 
 class FlatIconsArrows extends IconData {
   const FlatIconsArrows(int codePoint)
       : super(
@@ -21,6 +23,7 @@ class FlatIconsArrows extends IconData {
   );
 }
 
+// Social Icons class 
 class FlatIconsSocial extends IconData {
   const FlatIconsSocial(int codePoint)
       : super(

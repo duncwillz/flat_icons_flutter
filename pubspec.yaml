@@ -1,8 +1,8 @@
 name: flat_icons_flutter
-description: A new Flutter package.
+description: A new Flutter package. A set of icons from the flat icons pack included as Flutter Icons. All the essential icons which is frequently used by developers from the FlatIcon.
 version: 1.0.2
 author: Duncan Adjei <duncanadjei@gmail.com>
-homepage: https://github.com/duncanadjei/flat_icons_flutter
+homepage: https://github.com/duncwillz/flat_icons_flutter
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
