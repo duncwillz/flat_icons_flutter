@@ -1,6 +1,6 @@
 import 'package:example/icon.dart';
-import 'package:flutter/material.dart';
 import 'package:flat_icons_flutter/flat_icons_flutter.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyFlatIconExample());
 
@@ -13,7 +13,7 @@ class MyFlatIconExample extends StatelessWidget {
       theme: new ThemeData.light().copyWith(
         iconTheme: new IconThemeData(size: 36.0, color: Colors.black87),
         textTheme: new TextTheme(
-          body1: new TextStyle(fontSize: 16.0, color: Colors.black87),
+          bodyText2: new TextStyle(fontSize: 16.0, color: Colors.black87),
         ),
       ),
       home: FlatIconsGallery(),
@@ -22,7 +22,7 @@ class MyFlatIconExample extends StatelessWidget {
 }
 
 class FlatIconsGallery extends StatefulWidget {
-  FlatIconsGallery({Key key}) : super(key: key);
+  FlatIconsGallery({Key? key}) : super(key: key);
 
   @override
   _FlatIconsGalleryState createState() => _FlatIconsGalleryState();
@@ -32,15 +32,16 @@ class _FlatIconsGalleryState extends State<FlatIconsGallery> {
   var _searchTerm = "";
   var _isSearching = false;
 
-
-
   @override
   Widget build(BuildContext context) {
-  final filteredIcons = icons.where((icon) =>_searchTerm.isEmpty ||
-            icon.title.toLowerCase().contains(_searchTerm.toLowerCase())).toList();
-  final orientation = MediaQuery.of(context).orientation;
-  
-     return new Scaffold(
+    final filteredIcons = icons
+        .where((icon) =>
+            _searchTerm.isEmpty ||
+            icon.title.toLowerCase().contains(_searchTerm.toLowerCase()))
+        .toList();
+    final orientation = MediaQuery.of(context).orientation;
+
+    return new Scaffold(
       appBar: _isSearching ? _searchBar(context) : _titleBar(),
       body: new GridView.builder(
           itemCount: filteredIcons.length,
@@ -92,7 +93,6 @@ class _FlatIconsGalleryState extends State<FlatIconsGallery> {
     );
   }
 
-
   AppBar _titleBar() {
     return new AppBar(
       title: new Text("Flat Icon Flutter Gallery"),
@@ -100,7 +100,7 @@ class _FlatIconsGalleryState extends State<FlatIconsGallery> {
         new IconButton(
             icon: new Icon(FlatIcons.search),
             onPressed: () {
-              ModalRoute.of(context).addLocalHistoryEntry(
+              ModalRoute.of(context)?.addLocalHistoryEntry(
                 new LocalHistoryEntry(
                   onRemove: () {
                     setState(() {
