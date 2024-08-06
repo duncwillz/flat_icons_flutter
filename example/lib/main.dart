@@ -13,7 +13,7 @@ class MyFlatIconExample extends StatelessWidget {
       theme: new ThemeData.light().copyWith(
         iconTheme: new IconThemeData(size: 36.0, color: Colors.black87),
         textTheme: new TextTheme(
-          bodyText2: new TextStyle(fontSize: 16.0, color: Colors.black87),
+          bodyMedium: new TextStyle(fontSize: 16.0, color: Colors.black87),
         ),
       ),
       home: FlatIconsGallery(),
